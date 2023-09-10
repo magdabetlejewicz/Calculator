@@ -1,0 +1,87 @@
+/* Apply box-sizing to all elements to include borders and padding in width calculations */
+* {
+  box-sizing: border-box;
+}
+
+/* Reset margin and padding for the body to ensure consistent spacing */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for the calculator container */
+.calc {
+  width: 400px;
+  background-color: black;
+  color: white;
+}
+
+/* Styling for the calculator screen */
+.screen {
+  color: white;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 20px 5px;
+}
+
+/* Styling for calculator buttons */
+.calc-button {
+  background-color: #d8d9db;
+  color: black;
+  height: 100px;
+  width: 24.5%;
+  border: none;
+  border-radius: 0;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.calc-button:hover {
+  background-color: #ebebeb;
+}
+
+/* Button active (pressed) state */
+.calc-button:active {
+  background-color: #bbbcbe;
+}
+
+/* Styling for double-width buttons */
+.double {
+  width: 49.7%;
+}
+
+/* Styling for triple-width buttons */
+.triple {
+  width: 74.8%;
+}
+
+/* Styling for the last button in a row (equals button) */
+.calc-button:last-child {
+  background-color: #df974c;
+  color: white;
+}
+
+/* Button hover effect for the last button in a row */
+.calc-button:last-child:hover {
+  background-color: #dfb07e;
+}
+
+/* Button active (pressed) state for the last button in a row */
+.calc-button:last-child:active {
+  background-color: #dd8d37;
+}
+
+/* Styling for button rows */
+.calc-button-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+/* Remove padding from the last button row to avoid extra spacing */
+.calc-button-row:last-child {
+  padding-bottom: 0;
+}
