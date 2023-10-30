@@ -2,6 +2,7 @@
 let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
+console.log('I did a change in feature branch')
 
 // Get a reference to the calculator screen
 const screen = document.querySelector(".screen");
